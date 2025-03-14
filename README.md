@@ -1,20 +1,20 @@
 # Subnetting para la red 200.30.40.0 con 3 bits
 
-Este documento describe cómo dividir la red **200.30.40.0** en subredes utilizando **3 bits** adicionales para la creación de subredes.
+La red **200.30.40.0** en subredes utilizando **3 bits** adicionales para la creación de subredes.
 
 ---
 
 ## 1. Información de la red original
 - **Dirección IP:** 200.30.40.0
 - **Clase:** C
-- **Máscara de red original:** `255.255.255.0` (o `/24` en notación CIDR).
+- **Máscara de red original:** `255.255.255.0` (o `/24`).
 
 ---
 
 ## 2. Nueva máscara de red
 Al utilizar **3 bits adicionales** para crear subredes, la máscara de red se extiende:
 - **Bits de subred:** 3
-- **Nueva máscara de red:** `255.255.255.224` (o `/27` en notación CIDR).
+- **Nueva máscara de red:** `255.255.255.224` (o `/27`).
 
 ---
 
@@ -52,3 +52,19 @@ Este documento proporciona una guía completa para la división de la red **200.
 ![alt text](image.png)
 
 ![alt text](image-1.png)
+
+## Agregamos la rutas estaticas a los routers
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+## Toda la red nos queda asi
+
+![alt text](image-5.png)
+
+La comunicación esta funcionando
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
